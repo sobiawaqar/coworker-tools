@@ -22,5 +22,7 @@ if (command === "list") {
 
 function runListCommand() {
   // Replace this with your implementation
-  console.log("Called the list command");
+  members.forEach(person => {
+    console.log(`${person["first name"]} ${person["last name"]} is working in the ${person["department"]} at ${person["location"]} as a ${person["job title"]}`)
+  })
 }
